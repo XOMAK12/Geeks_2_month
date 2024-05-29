@@ -1,4 +1,4 @@
-function getRandomNumbers(count) {
+function randomNumbers(count) {
     const numbers = [];
     while (numbers.length < count) {
         const randomNumber = Math.floor(Math.random() * 99) + 1;
@@ -13,7 +13,7 @@ function generateNumbers() {
     const numbersContainer = document.querySelector('#numbersContainer');
     numbersContainer.innerHTML = '';
 
-    const numbers = getRandomNumbers(6);
+    const numbers = randomNumbers(6);
 
     for (let number of numbers) {
         const numberItem = document.createElement('li');
